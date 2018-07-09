@@ -30,7 +30,7 @@ body {
 
 .form {
     display: inline-block;
-    align-content: right;
+    margin-left: 300px;
 }
 
 .pollution_search {
@@ -38,7 +38,7 @@ body {
     background-color: #F5F5F5;
     border: 1px solid #C0C0C0;
     display: inline-block;
-    width: 100%
+    width: 100%;
 }
 
 .container {
@@ -80,27 +80,32 @@ body {
     border-bottom:solid 1px #000000;
     display: flex;
     align-items: flex-end;
+    margin: 30px;
     
 }
 
 .graph_container {
-    margin-top: 40px;
+    margin-top: 90px;
+    margin-bottom: 20px;
 }
 
 .item2 {
-    background-color: blueviolet;
+    background-color: yellow;
     justify-content: space-between;
     height: 50px;
     width: 10px;
-    margin-right: 160px;
+    margin-left: 230px;
     display: block;
     align-items: flex-end;
+}
+ div .item1:first-child{
+    margin-left: 80px;
 }
 .item1 {
     height: 50px;
     width: 10px;
-    margin-right: 160px;
-    background-color: blueviolet;
+    margin-left: 225px;
+    background-color: pink;
     justify-content: space-between;
     display: block;
     align-items: flex-end;
@@ -110,14 +115,14 @@ body {
     justify-content: space-between;
     height: 20px;
     width: 10px;
-    margin-right: 160px;
+    margin-left: 230px;
     display:block;
     align-items: flex-end;
 }
 .item4 {
     
-    margin-right: 160px;
-    background-color: blueviolet;
+    margin-left: 230px;
+    background-color: lightgreen;
     justify-content: space-between;
     height: 30px;
     width: 10px;
@@ -127,6 +132,12 @@ body {
 
 nav {
     display: block;
-    margin-right: 146px;
     justify-content: space-between;
+}
+img {
+    height: 50px;
+    width: 60px;
+}
+.item1:first-child{
+    margin-left: 110px;
 }
