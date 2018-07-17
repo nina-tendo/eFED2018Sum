@@ -2,6 +2,8 @@ body {
     font-family: Tahoma;
     color: #000000;
     margin: 0;
+    width: 50vw;
+    height: 50vh;
 }
 
 .tabs {
@@ -49,7 +51,7 @@ img {
 table {
     border: 1px solid black;
     margin: 20px 500px;
-
+    border-collapse: collapse;
 }
 td {
     border: 1px solid black;
@@ -79,4 +81,21 @@ footer {
     height: 20px;
     margin:30px 500px;
     display: inline-block;
+}
+.sun, .moon {
+    float: left;
+    width: px;
+    display: inline-block;
+}
+.foo div:nth-child(n+2) {
+    
+}
+.text {
+    margin-left: 120px;
+}
+.day_call {
+    background-color: lightgray;
+}
+section.foo {
+    border: 0;
 }
