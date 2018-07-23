@@ -2,28 +2,31 @@ body {
     font-family: Tahoma;
     color: #000000;
     margin: 0;
-    width: 50vw;
-    height: 50vh;
 }
 
 .tabs {
     background: #DCDCDC;
     border: 1px solid #C0C0C0;
     width: 100%;
+    box-sizing: content-box;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
-.tab {
+ .tab {
     cursor: pointer;
     border: 1px solid #C0C0C0;
     display: inline-block;
     cursor: pointer;
-    margin-bottom: -1px;
-    font-size: 14px;
     color: #000000;
     background:#F5F5F5;
-    padding: 10px;
-    width: 120px;
-    margin: 10px;
+    height: 30px;
+    vertical-align: middle;
+    box-sizing: content-box;
+    text-align: center; 
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 20px;
 }
 
 .tab:hover {
@@ -34,12 +37,14 @@ header {
     height:60px;
 }
 form {
+    display: inline-block;
     float: right;
-    margin-top: 15px;
-    margin-right: 5px;
 }
-input{
-     height: 30px;
+input {
+    
+    margin-right: 30px;
+    margin-top: 20px;
+    border-radius: 15px;
 }
 .text {
     display: inline-block;
@@ -50,7 +55,7 @@ img {
 }
 table {
     border: 1px solid black;
-    margin: 20px 500px;
+    margin: 0 auto;
     border-collapse: collapse;
 }
 td {
@@ -60,7 +65,7 @@ td {
 section {
     border: 1px solid black;
     padding: 40px;
-    width: 735px;
+    width: 625px;
     height: 20px;
     margin-left: 500px;
 }
@@ -82,19 +87,24 @@ footer {
     margin:30px 500px;
     display: inline-block;
 }
-.sun, .moon {
+.sun  {
     float: left;
     width: px;
     display: inline-block;
 }
+.moon {
+    float: right;
+ }
 .foo div:nth-child(n+2) {
     
 }
 .text {
-    margin-left: 120px;
+    margin-left: 50px;
+    vertical-align: middle;
 }
 .day_call {
-    background-color: lightgray;
+    margin: 0 auto;
+    margin-top: 30px;
 }
 section.foo {
     border: 0;
