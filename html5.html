@@ -8,11 +8,11 @@
 
 <body>
 
-    <div class="tabs">
-        <a href="html.html"> <span class="tab">Сегодня</span> </a>
-        <a href="html5.html"><span class="tab">5 дней</span> </a>
-        <a href="history.html"><span class="tab">История погоды</span> </a>
-    </div>
+    <nav class="tabs">
+        <a href="html.html"><span class="tab">Сегодня</span></a>
+        <a href="html5.html"><span class="tab">5 дней</span></a>
+        <a href="history.html"><span class="tab">История погоды</span></a>
+    </nav>
     <header>
     	<img src="cloud.png" style='height: 30px; width: 40px;'>
     	<div class='text'>34' Ижевск, Россия</div>
@@ -21,30 +21,39 @@
              </form>
     </header>
 <main>
-	<table align="center">
-		<tr>
-			<td>Пт, 18 мая</td>
-			<td>СБ, 19 мая</td>
-			<td>Вс, 20 мая</td>
-			<td>Пн, 21 мая</td>
-			<td>Вт, 22 мая</td>
-		</tr>
-		<tr>
-			<td><img src="Cloudy Weather.png"><img src="Sunny Weather.png"><img src="Weather_5.png"><img src="Weather_2.png"></td><td><img src="Cloudy Weather.png"><img src="Sunny Weather.png"><img src="Weather_2.png"><img src="Weather_5.png"></td><td><img src="Cloudy Weather.png"><img src="Weather_2.png"><img src="Weather_5.png"><img src="Sunny Weather.png"></td><td><img src="Cloudy Weather.png"><img src="Sunny Weather.png"><img src="Weather_5.png"><img src="Weather_2.png"></td><td><img src="CloudyWeather.png"><img src="Sunny Weather.png"><img src="Weather_5.png"><img src="Weather_2.png"></td>
-		</tr>
-		<tr>
-			<td colspan="5">Максимальная скорость ветра,м\с</td>
-		</tr>
-		<tr>
-			<td>2 5 4 5</td><td>2 5 4 5</td><td>2 5 4 5</td><td>2 5 4 5</td><td>2 5 4 5</td>
-		</tr>
-		<tr>
-			<td colspan="5">Осадки,мм</td>
-		</tr>
-		<tr>
-			<td>0 0 2.2 4.6</td><td>0 0 4.5 2.2</td><td>0 4.7 2.2 0</td><td>0 0 2.2 4.6</td><td>0 0 2.2 4.6</td>
-		</tr>
-	</table>
+	<div class='table inline-block'>
+		<div class='week_days_row '>
+			<div class='week_days inline-block'></div>
+			<div class='week_days inline-block'></div>
+			<div class='week_days inline-block'></div>
+			<div class='week_days inline-block'></div>
+			<div class='week_days inline-block'></div>
+		</div>
+		<div class='weather_days_row'>
+			<div class='weather_days'><img src="Cloudy Weather.png"><img src="Sunny Weather.png"><img src="Weather_5.png"><img src="Weather_2.png"></div>
+			<div class='weather_days'><img src="Cloudy Weather.png"><img src="Sunny Weather.png"><img src="Weather_2.png"><img src="Weather_5.png"></div>
+			<div class='weather_days'><img src="Cloudy Weather.png"><img src="Weather_2.png"><img src="Weather_5.png"><img src="Sunny Weather.png"></div>
+			<div class='weather_days'><img src="Cloudy Weather.png"><img src="Sunny Weather.png"><img src="Weather_5.png"><img src="Weather_2.png"></div>
+			<div class='weather_days'><img src="Cloudy Weather.png"><img src="Sunny Weather.png"><img src="Weather_5.png"><img src="Weather_2.png"></div>
+		</div>
+		<div class='max_wind_speed'></div>
+		<div class='max_wind_speed_row'>
+			<div class='wind_info'></div>
+			<div class='wind_info'></div>
+			<div class='wind_info'></div>
+			<div class='wind_info'></div>
+			<div class='wind_info'></div>
+		</div>
+		<div class='precipitation'></div>
+			<div class='precipitation_info_row'>
+				<div class='precipitation_info'></div>
+				<div class='precipitation_info'></div>
+				<div class='precipitation_info'></div>
+				<div class='precipitation_info'></div>
+				<div class='precipitation_info'></div>
+			</div>
+	</div>
+	</div>
 	<section class='day_call'>Пятница, 18 мая, сегодня<div class='text'>Солнце и луна</div></section>
 	<section class="foo"><div class='Sun'><img src="Sun.png"><div>Долгота дня - 16 ч 43 мин</div><div>Восход - 4:02</div><div>Заход - 20:45</div></div><div class='Moon'><img src="Moon.png"></div><div>Луна растущая - 19%</div><div>Восход - 7:40</div><div>Заход - 10:58</div>
 	</section>
@@ -52,3 +61,5 @@
 <footer>
 	<center> 2018 © Copyright</center>
 </footer>
+       
+    

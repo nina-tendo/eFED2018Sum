@@ -8,26 +8,37 @@ body {
     background: #DCDCDC;
     border: 1px solid #C0C0C0;
     width: 100%;
+    box-sizing: content-box;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 25px;
 }
 
 .tab {
     cursor: pointer;
     border: 1px solid #C0C0C0;
-	display: inline-block;
-    cursor: pointer;
-    margin-bottom:-1px;
-    font-size: 14px;
+    display: inline-block;
     color: #000000;
     background:#F5F5F5;
-    padding: 5px;
-    width: 120px;
-    margin:5px;
+    font-size: 16px;
+    height: 30px;
+    box-sizing: border-box;
+    text-align: center; 
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 20px;
 }
 
 .tab:hover {
     background: #A9A9A9;
 }
-
+header {
+    background-color: #F5F5F5;
+    height:60px;
+    border: 1px solid #C0C0C0;
+    font-size: 12px;
+    width: 100%;
+}
 form {
     display: inline-block;
 }
@@ -37,22 +48,20 @@ input {
 	vertical-align: center;
 	margin-bottom: 10px;
 	border-radius: 15px;
+	position: relative;
 }
-input:before{
+.input:before{
 	content: url(lupa.png);
-	padding: 0px;
+	padding: 5px;
     margin: 5px 0;
+    position: absolute;
+    height: 5px;
+    width: 5px;
 }
 .pollution {
-	margin-top: 10px;
+	margin-top: 20px;
 	margin-bottom: -15px;
-	}
-.pollution_search {
-    font-size: 12px;
-    background-color: #F5F5F5;
-    border: 1px solid #C0C0C0;
-    display: inline-block;
-    width: 100%;
+	padding-left: 5px;
 }
 
 .container {
@@ -154,4 +163,4 @@ img {
 }
 .item1:first-child{
     margin-left: 110px;
-}
+} 
