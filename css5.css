@@ -11,18 +11,18 @@ body {
     box-sizing: content-box;
     padding-top: 10px;
     padding-bottom: 10px;
+    line-height: 25px;
 }
 
  .tab {
     cursor: pointer;
     border: 1px solid #C0C0C0;
     display: inline-block;
-    cursor: pointer;
     color: #000000;
     background:#F5F5F5;
+    font-size: 16px;
     height: 30px;
-    vertical-align: middle;
-    box-sizing: content-box;
+    box-sizing: border-box;
     text-align: center; 
     padding-left: 10px;
     padding-right: 10px;
@@ -33,8 +33,10 @@ body {
     background: #A9A9A9;
 }
 header {
-    background-color: hsla(0, 100%, 90%, 0.3);
+    background-color: #F5F5F5;
     height:60px;
+    border: 1px solid #C0C0C0;
+    width: 100%;
 }
 form {
     display: inline-block;
@@ -48,19 +50,21 @@ input {
 }
 .text {
     display: inline-block;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
 }
 img {
     padding-top: 15px;
 }
-table {
+.table {
     border: 1px solid black;
     margin: 0 auto;
     border-collapse: collapse;
 }
-td {
-    border: 1px solid black;
-    text-align: center;
+.inline-block {
+    display: inline-block;
+}
+.week_days_row{
+    box-sizing: content-box;
 }
 section {
     border: 1px solid black;
