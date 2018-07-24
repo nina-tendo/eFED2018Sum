@@ -1,7 +1,6 @@
 body {
     font-family: Tahoma;
     color: #000000;
-    margin: 0 auto;
 }
 
 .tabs {
@@ -51,7 +50,7 @@ input {
 	position: relative;
 }
 .input:before{
-	content: url(lupa.png);
+	content: url(lupa.pn);
 	padding: 5px;
     margin: 5px 0;
     position: absolute;

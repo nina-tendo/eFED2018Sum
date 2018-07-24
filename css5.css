@@ -1,7 +1,6 @@
 body {
     font-family: Tahoma;
     color: #000000;
-    margin: 0;
 }
 
 .tabs {
@@ -86,9 +85,9 @@ footer {
     height: 10px;
 }
 .foo{
-    width: 735px;
+    width: 600px;
     height: 20px;
-    margin:30px 500px;
+    margin:0 auto;
     display: inline-block;
 }
 .sun  {
