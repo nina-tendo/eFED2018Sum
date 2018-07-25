@@ -1,6 +1,7 @@
 body {
     font-family: Tahoma;
     color: #000000;
+    margin:0;
 }
 
 .tabs {
@@ -67,7 +68,6 @@ input {
     width: 100%;
     display: inline-block;
     font-size: 22px;
-    margin-left: 5%;
 }
 
 .box_1, .box_2 {
