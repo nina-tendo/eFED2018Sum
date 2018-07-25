@@ -1,6 +1,7 @@
 body {
     font-family: Tahoma;
     color: #000000;
+    margin:0;
 }
 
 .tabs {
@@ -47,38 +48,75 @@ input {
     margin-top: 20px;
     border-radius: 15px;
 }
-.text {
-    display: inline-block;
-    padding-bottom: 20px;
-}
+
 img {
     padding-top: 15px;
 }
 .table {
-    border: 1px solid black;
+    border: 1px solid gray;
     margin: 0 auto;
-    border-collapse: collapse;
+    width: 1030px;
 }
 .inline-block {
     display: inline-block;
 }
-.week_days_row{
-    box-sizing: content-box;
+.week_days {
+    width: 200px;
+    text-align: center;
+    border: 1px solid gray;
+}
+.weather_days {
+    border: 1px solid gray;
+    width: 200px;
+}
+.max_wind_speed {
+   text-align: center;
+   background-color: lightgray;
+}
+.max_wind_speed_row {
+    display: flex;
+    justify-content: space-around;
+}
+.wind_info {
+    border: 1px solid gray;
+    width: 200px;
+}
+.transform {
+    height: 15px;
+    width: 20px;
+    background-color: lightgray;
+    display: inline-block;
+    margin: 10px;
+    transform: skewX(-35deg);
+    text-align: center;
+    line-height: 14px;
+}
+.precipitation {
+    text-align: center;
+    background-color: lightgray;
+}
+.precipitation_info {
+    display: inline-block;
+    border: 1px solid black;
+}
+.precipitation_info_block {
+    display: inline-block;
+    padding-top: 40px;
+    margin: 0 10px 0 10px;
 }
 section {
     border: 1px solid black;
     padding: 40px;
     width: 625px;
     height: 20px;
-    margin-left: 500px;
+    margin:0 auto;
 }
 footer {
     background: #DCDCDC;
     border: 1px solid #C0C0C0;
     color: #000000;
-    width: 100%;
+    margin-top: 30px;
     font-size: 12px;
-    position: fixed;
     padding: 10px;
     left: 0;
     bottom: 0;
@@ -103,7 +141,7 @@ footer {
 }
 .text {
     margin-left: 50px;
-    vertical-align: middle;
+    display: inline-block;
 }
 .day_call {
     margin: 0 auto;
