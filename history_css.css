@@ -45,39 +45,40 @@ main {
     margin-bottom: -17px;
     margin-left: 20px;
 }
-form {
-    float: right;
-    margin-top: 15px;
-    margin-right: 5px;
+.input {
+    position: relative;
 }
-input{
-     float: right;
+input {
     margin-right: 30px;
-    vertical-align: center;
-    margin-bottom: 10px;
+    margin-top: 20px;
     border-radius: 15px;
+    color: gray;
+    background-color: lightgray;
+    position: absolute;
+    right: 0;
+    margin-top: 0px;
+}
 }
 footer {
     background: #DCDCDC;
     border: 1px solid #C0C0C0;
     color: #000000;
-    width: 100%;
+    margin-top: 30px;
     font-size: 12px;
-    position: fixed;
     padding: 10px;
     left: 0;
     bottom: 0;
     height: 10px;
-    }
-    td{
+}
+td {
         padding: 10px;
-    }
-    td:nth-child(even){
+}
+td:nth-child(even){
         background-color: lightgray;
-    }
-    tr:nth-child(odd){
+}
+tr:nth-child(odd){
         background-color: lightgray;
-    }
-    table {
+}
+table {
         margin:0 auto;
     }
