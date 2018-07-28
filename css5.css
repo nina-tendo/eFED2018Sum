@@ -38,15 +38,18 @@ header {
     border: 1px solid #C0C0C0;
     width: 100%;
 }
-form {
-    display: inline-block;
-    float: right;
+.input {
+    position: relative;
 }
 input {
-    
     margin-right: 30px;
     margin-top: 20px;
     border-radius: 15px;
+    color: gray;
+    background-color: lightgray;
+    position: absolute;
+    right: 0;
+    margin-top: -25px;
 }
 
 img {
@@ -55,7 +58,6 @@ img {
 .table {
     border: 1px solid gray;
     margin: 0 auto;
-    width: 1030px;
 }
 .inline-block {
     display: inline-block;
