@@ -1,7 +1,8 @@
 body {
     font-family: Tahoma;
     color: #000000;
-    margin:0;
+    margin: 0;
+    overflow-x: hidden;
 }
 
 .tabs {
@@ -49,18 +50,23 @@ input {
     background-color: lightgray;
     position: absolute;
     right: 0;
-    margin-top: -25px;
+    margin-top: -20px;
 }
-
-img {
+.inline-block {
+    display: inline-block;
+}
+.header_img {
     padding-top: 15px;
 }
 .table {
     border: 1px solid gray;
     margin: 0 auto;
 }
-.inline-block {
-    display: inline-block;
+.table_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 40px;
 }
 .week_days {
     width: 200px;
@@ -106,10 +112,10 @@ img {
     padding-top: 40px;
     margin: 0 10px 0 10px;
 }
-section {
-    border: 1px solid black;
+.day_call {    
+    border: 1px solid lightgray;
     padding: 40px;
-    width: 625px;
+    width: 950px;
     height: 20px;
     margin:0 auto;
 }
@@ -117,7 +123,7 @@ footer {
     background: #DCDCDC;
     border: 1px solid #C0C0C0;
     color: #000000;
-    margin-top: 30px;
+    margin-top: 300px;
     font-size: 12px;
     padding: 10px;
     left: 0;
@@ -125,30 +131,25 @@ footer {
     height: 10px;
 }
 .foo{
-    width: 600px;
     height: 20px;
-    margin:0 auto;
-    display: inline-block;
+    box-sizing: content-box;
+    margin-left: 500px;
+    display: flex;
+    margin-top: 30px;
 }
-.sun  {
-    float: left;
-    width: px;
-    display: inline-block;
-}
-.moon {
-    float: right;
- }
-.foo div:nth-child(n+2) {
-    
+.Moon {
+    margin-left: 200px;
 }
 .text {
     margin-left: 50px;
-    display: inline-block;
+    margin-top: -25px;
 }
-.day_call {
-    margin: 0 auto;
-    margin-top: 30px;
+.text_day_call {
+    margin-left: 200px;
 }
 section.foo {
     border: 0;
+}
+.last_line {
+    
 }

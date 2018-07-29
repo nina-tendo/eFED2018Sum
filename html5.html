@@ -14,13 +14,17 @@
         <a href="history.html"><span class="tab">История погоды</span></a>
     </nav>
     <header>
-    	<img src="cloud.png" style='height: 30px; width: 40px;'>
+    	<img class ='header_img' src="pics/cloud.png" style='height: 30px; width: 40px;'>
     	<div class='text'>34' Ижевск, Россия</div>
     	<div class='input'>
                 <input type="search" name="q" placeholder="Поиск"> 
              </div>
     </header>
 <main>
+	<div class='a'>
+		<div class='b'></div>
+	</div>
+	<div class='table_container'>
 	<div class='table inline-block'>
 		<div class='week_days_row '>
 			<div class='week_days inline-block'>Пт, 18 мая</div>
@@ -30,11 +34,11 @@
 			<div class='week_days inline-block'>Вт, 22 мая</div>
 		</div>
 		<div class='weather_days_row inline-block'>
-			<div class='weather_days inline-block'><img src="Cloudy Weather.png"><img src="Sunny Weather.png"><img src="Weather_5.png"><img src="Weather_2.png"></div>
-			<div class='weather_days inline-block'><img src="Cloudy Weather.png"><img src="Sunny Weather.png"><img src="Weather_2.png"><img src="Weather_5.png"></div>
-			<div class='weather_days inline-block'><img src="Cloudy Weather.png"><img src="Weather_2.png"><img src="Weather_5.png"><img src="Sunny Weather.png"></div>
-			<div class='weather_days inline-block'><img src="Cloudy Weather.png"><img src="Sunny Weather.png"><img src="Weather_5.png"><img src="Weather_2.png"></div>
-			<div class='weather_days inline-block'><img src="Cloudy Weather.png"><img src="Sunny Weather.png"><img src="Weather_5.png"><img src="Weather_2.png"></div>
+			<div class='weather_days inline-block'><img src="pics/Cloudy Weather.png"><img src="pics/Sunny Weather.png"><img src="pics/Weather_5.png"><img src="pics/Weather_2.png"></div>
+			<div class='weather_days inline-block'><img src="pics/Cloudy Weather.png"><img src="pics/Sunny Weather.png"><img src="pics/Weather_2.png"><img src="pics/Weather_5.png"></div>
+			<div class='weather_days inline-block'><img src="pics/Cloudy Weather.png"><img src="pics/Weather_2.png"><img src="pics/Weather_5.png"><img src="pics/Sunny Weather.png"></div>
+			<div class='weather_days inline-block'><img src="pics/Cloudy Weather.png"><img src="pics/Sunny Weather.png"><img src="pics/Weather_5.png"><img src="pics/Weather_2.png"></div>
+			<div class='weather_days inline-block'><img src="pics/Cloudy Weather.png"><img src="pics/Sunny Weather.png"><img src="pics/Weather_5.png"><img src="pics/Weather_2.png"></div>
 		</div>
 		<div class='max_wind_speed'>Максимальная скорость ветра, м/с</div>
 		<div class='max_wind_speed_row inline-block'>
@@ -46,15 +50,16 @@
 		</div>
 		<div class='precipitation'>Осадки, мм</div>
 			<div class='precipitation_info_row'>
-				<div class='precipitation_info'><div class='precipitation_info_block'>0</div><div class='precipitation_info_block'>0</div><div class='precipitation_info_block'><img src='Group.png'></div><div class='precipitation_info_block'><img src='Group_2.png'></div></div>
-				<div class='precipitation_info'><div class='precipitation_info_block'>0</div><div class='precipitation_info_block'>0</div><div class='precipitation_info_block'><img src='Group_2.png'></div><div class='precipitation_info_block'><img src='Group.png'></div></div>
-				<div class='precipitation_info'><div class='precipitation_info_block'>0</div><div class='precipitation_info_block'><img src='Group_2.png'></div><div class='precipitation_info_block'><img src='Group.png'></div><div class='precipitation_info_block'>0</div></div>
-				<div class='precipitation_info'><div class='precipitation_info_block'>0</div><div class='precipitation_info_block'>0</div><div class='precipitation_info_block'><img src='Group.png'></div><div class='precipitation_info_block'><img src='Group_2.png'></div></div>
-				<div class='precipitation_info'><div class='precipitation_info_block'>0</div><div class='precipitation_info_block'>0</div><div class='precipitation_info_block'><img src='Group.png'></div><div class='precipitation_info_block'><img src='Group_2.png'></div></div>
+				<div class='precipitation_info'><div class='precipitation_info_block'>0</div><div class='precipitation_info_block'>0</div><div class='precipitation_info_block'><img src='pics/Group.png'></div><div class='precipitation_info_block'><img src='pics/Group_2.png'></div></div>
+				<div class='precipitation_info'><div class='precipitation_info_block'>0</div><div class='precipitation_info_block'>0</div><div class='precipitation_info_block'><img src='pics/Group_2.png'></div><div class='precipitation_info_block'><img src='pics/Group.png'></div></div>
+				<div class='precipitation_info'><div class='precipitation_info_block'>0</div><div class='precipitation_info_block'><img src='pics/Group_2.png'></div><div class='precipitation_info_block'><img src='pics/Group.png'></div><div class='precipitation_info_block'>0</div></div>
+				<div class='precipitation_info'><div class='precipitation_info_block'>0</div><div class='precipitation_info_block'>0</div><div class='precipitation_info_block'><img src='pics/Group.png'></div><div class='precipitation_info_block'><img src='pics/Group_2.png'></div></div>
+				<div class='precipitation_info'><div class='precipitation_info_block'>0</div><div class='precipitation_info_block'>0</div><div class='precipitation_info_block'><img src='pics/Group.png'></div><div class='precipitation_info_block'><img src='pics/Group_2.png'></div></div>
 			</div>
 	</div>
-	<section class='day_call'>Пятница, 18 мая, сегодня<div class='text'>Солнце и луна</div></section>
-	<section class="foo"><div class='Sun'><img src="Sun.png"><div>Долгота дня - 16 ч 43 мин</div><div>Восход - 4:02</div><div>Заход - 20:45</div></div><div class='Moon'><img src="Moon.png"></div><div>Луна растущая - 19%</div><div>Восход - 7:40</div><div>Заход - 10:58</div>
+</div>
+	<section class='day_call'>Пятница, 18 мая, сегодня<div class='text_day_call inline-block'>Солнце и луна</div></section>
+	<section class="foo inline-block"><div class='Sun inline-block'><img src="pics/Sun.png"><div>Долгота дня - 16ч 43мин</div><div>Восход - 4:02</div><div>Заход - 20:45</div></div><div class='Moon inline-block'><img src="pics/Moon.png"><div>Луна растущая - 19%</div><div>Восход - 7:40</div><div>Заход - 10:58</div></div><!---<div class='last_line'>Полнолуние - 28 июня, через 23 дня</div><div class='last_line'>Сегодня день на 2 минуты длиннее, чем вчера</div>--->
 	</section>
 </main>
 <footer>

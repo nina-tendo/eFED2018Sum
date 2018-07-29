@@ -2,6 +2,7 @@ body {
     font-family: Tahoma;
     color: #000000;
     margin:0;
+    overflow-x: hidden;
 }
 
 .tabs {
@@ -36,7 +37,6 @@ header {
     background-color: #F5F5F5;
     height:60px;
     border: 1px solid #C0C0C0;
-    font-size: 12px;
     width: 100%;
 }
 .input {
@@ -50,7 +50,7 @@ input {
     background-color: lightgray;
 	position: absolute;
 	right: 0;
-	margin-top: 5px;
+	margin-top: -2px;
 }
 .input:before{
 	content: url(lupa.pn);
@@ -64,6 +64,7 @@ input {
 	margin-top: 20px;
 	margin-bottom: -15px;
 	padding-left: 5px;
+	color: grey;
 }
 
 .container {
@@ -73,7 +74,7 @@ input {
 }
 
 .box_1, .box_2 {
-    white-space:nowrap;
+    margin-left: 30px;
     display: inline-block;
 }
 
@@ -105,7 +106,6 @@ footer {
     display: flex;
     align-items: flex-end;
     margin: 30px;
-    
 }
 
 .graph_container {
@@ -115,48 +115,34 @@ footer {
 
 .item2 {
     background-color: yellow;
-    justify-content: space-between;
     height: 50px;
     width: 10px;
     margin-left: 230px;
     display: block;
-    align-items: flex-end;
 }
- div .item1:first-child{
-    margin-left: 80px;
+div.item1:first-child{
+    margin-left: 50px;
 }
 .item1 {
     height: 50px;
     width: 10px;
     margin-left: 225px;
     background-color: pink;
-    justify-content: space-between;
     display: block;
-    align-items: flex-end;
 }
 .item3 {
     background-color: blueviolet;
-    justify-content: space-between;
     height: 20px;
     width: 10px;
     margin-left: 230px;
     display:block;
-    align-items: flex-end;
 }
 .item4 {
-    
     margin-left: 230px;
     background-color: lightgreen;
-    justify-content: space-between;
     height: 30px;
     width: 10px;
     display: block;
-    align-items: flex-end;
-}
-
-nav {
-    display: block;
-    justify-content: space-between;
 }
 img {
     height: 50px;
