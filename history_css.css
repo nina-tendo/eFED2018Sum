@@ -33,7 +33,7 @@ body {
 .tab:hover {
     background: #A9A9A9;
 }
-header {
+.header {
     background-color: #F5F5F5;
     height:60px;
     border: 1px solid #C0C0C0;
@@ -60,7 +60,7 @@ input {
     margin-top: 0px;
 }
 }
-footer {
+.footer {
     background: #DCDCDC;
     border: 1px solid #C0C0C0;
     color: #000000;
