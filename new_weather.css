@@ -1,0 +1,20 @@
+body {
+	margin: 0;
+}
+img {
+	width: 100px;
+	height: 100px;
+}
+.today_info {
+	display: flex;
+}
+.weather_row {
+	display: flex;
+}
+.temp {
+	font-size: 20vh;
+}
+.week_day_info {
+	text-align: center;
+	
+}
