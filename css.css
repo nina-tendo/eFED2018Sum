@@ -33,7 +33,7 @@ body {
 .tab:hover {
     background: #A9A9A9;
 }
-header {
+.header {
     background-color: #F5F5F5;
     height:60px;
     border: 1px solid #C0C0C0;
@@ -48,17 +48,20 @@ input {
     border-radius: 15px;
     color: gray;
     background-color: lightgray;
-	position: absolute;
-	right: 0;
 	margin-top: -2px;
+	position: relative;
+	float: right;
 }
 .input:before{
-	content: url(lupa.pn);
+	content: url(lupa.png);
 	padding: 5px;
     margin: 5px 0;
-    position: absolute;
-    height: 5px;
-    width: 5px;
+    height: 10px;
+    width: 10px;
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+
 }
 .pollution {
 	margin-top: 20px;
@@ -89,7 +92,7 @@ input {
     justify-content: space-around;
 }
 
-footer {
+.footer {
     background: #DCDCDC;
     border: 1px solid #C0C0C0;
     color: #000000;
@@ -144,7 +147,7 @@ div.item1:first-child{
     width: 10px;
     display: block;
 }
-img {
+.img {
     height: 50px;
     width: 60px;
 }
