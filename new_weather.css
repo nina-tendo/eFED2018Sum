@@ -7,14 +7,51 @@ img {
 }
 .today_info {
 	display: flex;
+	justify-content: space-evenly;
 }
 .weather_row {
 	display: flex;
+	justify-content: space-between;
 }
 .temp {
-	font-size: 20vh;
+	font-size: 15vh;
 }
 .week_day_info {
 	text-align: center;
-	
+}
+.temp {
+	flex-grow: 1;
+}
+.PHWP {
+	flex-grow: 1;
+	display: flex;
+	justify-content: space-evenly;
+	flex-direction: column;
+}
+.particles:hover {
+	color: lightpink;
+}
+@media screen and (max-width:767px){
+	.weather_row {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+	}
+	.week_day_info {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+	}
+	.particles {
+		display: flex;
+		flex-direction: column;
+		flex-grow: 1;
+	}
+}
+
+@media screen and (max-width:767px){
+	.particles:hover {
+		color: dodgerblue;
+	}
+
 }
