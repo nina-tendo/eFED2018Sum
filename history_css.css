@@ -84,6 +84,8 @@ table {
     left: 0;
     bottom: 0;
     height: 10px;
+    position: fixed;
+    width: 100%;
 }
 .copyright {
     text-align: center;
