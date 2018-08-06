@@ -74,7 +74,6 @@ input {
 }
 
 .box_1 div, .box_2 div {
-    width: 500px;
     display: inline-block;
 }
 img {
@@ -94,6 +93,7 @@ img {
     text-align: center;
     padding-left: 10px;
     padding-right: 10px;
+    max-width: 100%;
 }
 .temp {
     flex-grow: 1;
