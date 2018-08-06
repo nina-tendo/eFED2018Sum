@@ -56,6 +56,7 @@ input {
     background-position:10px;
     font-size:15px;
     margin-top: -20px;
+    display: flex;
 }
 .header_img {
     padding-top: 15px;
@@ -163,7 +164,7 @@ input {
     border: 1px solid lightgray;
     padding: 40px;
     width: 55%;
-    height: 20px;
+    height: 40px;
     margin:0 auto;
     margin-top: 30px;
 }
@@ -171,7 +172,7 @@ input {
     box-sizing: content-box;
     display: flex;
     margin-top: 80px;
-    margin-left: 500px;
+    justify-content: center;
 }
 .Moon {
     margin-left: 200px;
@@ -181,7 +182,8 @@ input {
     margin-top: -25px;
 }
 .text_day_call {
-    margin-left: 200px;
+    margin-left: 400px;
+    margin-top: -20px;
 }
 section.foo {
     border: 0;
@@ -196,18 +198,28 @@ section.foo {
     left: 0;
     bottom: 0;
     height: 10px;
+    position: fixed;
+    width: 100%;
 }
 .copyright {
     text-align: center;
 }
 @media screen and (max-width: 767px){
-    .weather_table_container {
-        width: 100%;
+    .max_wind_speed_item {
+        flex-direction: column;
     }
-    .precipitation_name {
-        display: none;
+    .precipitation_info {
+        flex-direction: column;
     }
-    .max_wind_speed_name {
-        display: none;
+    .precipitation_info_block {
+        margin-top: 30px;
+        margin-right: 7px;
+    }
+    .Moon {
+        margin: 0;
+    }
+    .text_day_call {
+        margin-left: 0;
+        margin-top: 30px;
     }
 }
