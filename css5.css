@@ -38,6 +38,7 @@ body {
     height:60px;
     border: 1px solid #C0C0C0;
     width: 100%;
+    margin-bottom: 20px;
 }
 .input {
     position: relative;
@@ -46,25 +47,30 @@ input {
     margin-right: 30px;
     border-radius: 15px;
     color: gray;
+    background-color: lightgray;
     position: absolute;
     right: 0;
-    margin-top: -20px;
     background-image: url("pics/magnifier.png");
-    background-color: lightgray;
+    background-repeat:no-repeat;
+    background-size:15px;
+    background-position:10px;
+    font-size:15px;
+    margin-top: -20px;
 }
 .header_img {
     padding-top: 15px;
 }
 .weather_table_container {
-    border: 1px solid lightgrey;
-    margin: 0 auto;
     display: flex;
-    width: 60%;
+    width: 100%;
 }
 .weather_table {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    width: 60%;
+    margin: 0 auto;
+    border: 1px solid lightgrey;
 }
 .column_item {
     display: flex;
@@ -161,17 +167,6 @@ input {
     margin:0 auto;
     margin-top: 30px;
 }
-.footer {
-    background: #DCDCDC;
-    border: 1px solid #C0C0C0;
-    color: #000000;
-    margin-top: 300px;
-    font-size: 12px;
-    padding: 10px;
-    left: 0;
-    bottom: 0;
-    height: 10px;
-}
 .foo{
     box-sizing: content-box;
     display: flex;
@@ -190,6 +185,17 @@ input {
 }
 section.foo {
     border: 0;
+}
+.footer {
+    background: #DCDCDC;
+    border: 1px solid #C0C0C0;
+    color: #000000;
+    margin-top: 150px;
+    font-size: 12px;
+    padding: 10px;
+    left: 0;
+    bottom: 0;
+    height: 10px;
 }
 .copyright {
     text-align: center;

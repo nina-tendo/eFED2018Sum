@@ -51,25 +51,16 @@ main {
 }
 input {
     margin-right: 30px;
-    margin-top: 20px;
     border-radius: 15px;
     color: gray;
     background-color: lightgray;
     position: absolute;
     right: 0;
-    margin-top: 0px;
-}
-}
-.footer {
-    background: #DCDCDC;
-    border: 1px solid #C0C0C0;
-    color: #000000;
-    margin-top: 30px;
-    font-size: 12px;
-    padding: 10px;
-    left: 0;
-    bottom: 0;
-    height: 10px;
+    background-image: url("pics/magnifier.png");
+    background-repeat:no-repeat;
+    background-size:15px;
+    background-position:10px;
+    font-size:15px;
 }
 td {
         padding: 10px;
@@ -83,3 +74,17 @@ tr:nth-child(odd){
 table {
         margin:0 auto;
     }
+.footer {
+    background: #DCDCDC;
+    border: 1px solid #C0C0C0;
+    color: #000000;
+    margin-top: 360px;
+    font-size: 12px;
+    padding: 10px;
+    left: 0;
+    bottom: 0;
+    height: 10px;
+}
+.copyright {
+    text-align: center;
+}

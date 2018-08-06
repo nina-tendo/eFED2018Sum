@@ -94,11 +94,11 @@ img {
     padding-left: 10px;
     padding-right: 10px;
 }
-.week_day_info:hover {
-    border: 1px solid lightgrey;
-}
 .temp {
     flex-grow: 1;
+}
+.particles {
+    color: grey;
 }
 .particles:hover {
     color: lightpink;
@@ -126,13 +126,15 @@ img {
     background: #DCDCDC;
     border: 1px solid #C0C0C0;
     color: #000000;
-    width: 100%;
+    margin-top: 360px;
     font-size: 12px;
-    position: fixed;
     padding: 10px;
     left: 0;
     bottom: 0;
     height: 10px;
+}
+.copyright {
+    text-align: center;
 }
 @media screen and (max-width:767px){
     .weather_row {
