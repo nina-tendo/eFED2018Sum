@@ -198,7 +198,6 @@ section.foo {
     left: 0;
     bottom: 0;
     height: 10px;
-    position: fixed;
     width: 100%;
 }
 .copyright {
@@ -212,7 +211,7 @@ section.foo {
         flex-direction: column;
     }
     .precipitation_info_block {
-        margin-top: 30px;
+        margin-top: 40px;
         margin-right: 7px;
     }
     .Moon {
@@ -221,5 +220,14 @@ section.foo {
     .text_day_call {
         margin-left: 0;
         margin-top: 30px;
+    }
+    .weather_block {
+        flex-direction: column;
+    }
+    .column_item_block {
+        flex-direction: column;
+    }
+    .temp {
+        margin: 10px;
     }
 }
