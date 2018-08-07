@@ -1,0 +1,231 @@
+body {
+    font-family: Tahoma,sans-serif;
+    color: #000000;
+    margin:0;
+    overflow-x: hidden;
+}
+
+.tabs {
+    background: #DCDCDC;
+    border: 1px solid #C0C0C0;
+    width: 100%;
+    box-sizing: content-box;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 25px;
+}
+
+.tab {
+    cursor: pointer;
+    border: 1px solid #C0C0C0;
+    display: inline-block;
+    color: #000000;
+    background:#F5F5F5;
+    font-size: 16px;
+    height: 30px;
+    box-sizing: border-box;
+    text-align: center; 
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 20px;
+}
+
+.tab:hover {
+    background: #A9A9A9;
+}
+.header {
+    background-color: #F5F5F5;
+    height:60px;
+    border: 1px solid #C0C0C0;
+    width: 100%;
+}
+.input {
+	position: relative;
+}
+input {
+	margin-right: 30px;
+    border-radius: 15px;
+    color: gray;
+    background-color: lightgray;
+	position: absolute;
+    right: 0;
+    background-image: url("pics/magnifier.png");
+    background-repeat:no-repeat;
+    background-size:15px;
+    background-position:10px;
+    font-size:15px;
+    margin-top: 20px;
+}
+.pollution {
+	padding-left: 5px;
+	color: grey;
+	display: flex;
+}
+.pollution_search {
+	display: flex;
+	justify-content: space-between;
+}
+.container {
+    width: 100%;
+    display: inline-block;
+    font-size: 22px;
+}
+
+.box_1, .box_2 {
+    margin-left: 30px;
+    display: inline-block;
+}
+
+.box_1 div, .box_2 div {
+    display: inline-block;
+}
+img {
+    max-width: 100px;
+    max-height: 100px;
+}
+.today_info {
+    display: flex;
+    justify-content: space-evenly;
+}
+.weather_row {
+    display: flex;
+    justify-content: space-around;
+    max-width: 100%;
+}
+.week_day_info {
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    max-width: 100%;
+}
+.temp {
+    flex-grow: 1;
+}
+.particles {
+    color: grey;
+}
+.particles:hover {
+    color: lightpink;
+}
+.wind-and-time {
+	display: flex;
+	color: lightblue;
+	text-align: center;
+	justify-content: space-around;
+	margin: 0 auto;
+	margin-top: 50px;
+	max-width: 100%;
+}
+
+.value-arrow-hour {
+	display: flex;
+	width: 100%;
+	flex-direction: column;
+}
+
+.value-and-arrows {
+	display: flex;
+	justify-content: space-around;
+}
+
+.value-and-arrows__wind-speed {
+	height: 70px;
+	display: flex;
+	flex-direction: column-reverse;
+}
+
+.wind-320-degrees {
+	transform: rotate(320deg);
+}
+
+.wind-350-degrees {
+	transform: rotate(350deg);
+}
+
+.wind-20-degrees {
+	transform: rotate(20deg);
+}
+
+.time-of-day {
+    flex-grow: 1;
+    padding: 10px;
+	color: #670764;
+	text-align: center;
+}
+
+.week-temperature {
+	display: flex;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.week-temperature__everyday{
+	text-align: center;
+	border: 1px solid white;
+	flex-grow: 1;
+}
+
+.weekday-lilac {
+	color: #BA44ED;
+}
+.footer {
+    background: #DCDCDC;
+    border: 1px solid #C0C0C0;
+    color: #000000;
+    margin-top: 200px;
+    font-size: 12px;
+    padding: 10px;
+    left: 0;
+    bottom: 0;
+    height: 10px;
+    width: 100%;
+}
+.copyright {
+    text-align: center;
+}
+@media screen and (max-width:767px){
+    .weather_row {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .week_day_info {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .particles {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+    }
+}
+
+@media screen and (max-width:767px){
+    .particles:hover {
+        color: dodgerblue;
+    }
+    footer {
+        position: relative;
+    }
+    .footer {
+        margin-top: 0;
+    }
+    .pollution {
+    	width: auto;
+    	display: flex;
+    }
+    .input {
+    	width: 100%;
+    }
+} 
+@media screen and (max-width: 558px){
+	input {
+		position: static;
+		width: 100%;
+	}
+	.input {
+		position: static;
+		
+	}
+}
