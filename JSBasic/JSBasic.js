@@ -68,3 +68,25 @@ function reverseArrayInPlace(arr) {
     return arr;
 }
 console.log(reverseArray());
+//Задача 6
+function mergeArrays(a,b,...c){
+
+}
+console.log(mergeArrays([1, 2], [3, 4], [5, 6]));
+//Звдача 7
+function every(array, predicate) {
+    for (var i = 0; i < array.length; i++) {
+        if (!predicate(array[i]))
+            return false;
+    }
+   else return true;
+}
+
+function some(array, predicate) {
+    for (var i = 0; i < array.length; i++) {
+        if (predicate(array[i]))
+            return true;
+    }
+    else return false;
+}
+console.log(every([1, 4, NaN, 6], Number.isNaN);
