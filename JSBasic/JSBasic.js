@@ -1,15 +1,14 @@
 //Задача 1
 function countChar (string, symb){
     var str = string.toLowerCase();
-    var sym = symb.toLowerCase();
-    var sums = {};
-    var newstr = str.split('');
-    newstr.forEach(function(elem) {
-        if (elem === sym)
-            sums.push(elem);
-    });
-    alert(sums.length);
+    var count = 0;
+    var c = str.charAt(symb);
+    for(i=0; i<=c.length; i++){
+        count++;
+    }
+    return count;
 }
+
 console.log(countChar('My Random String', 'm'));
 //Задача 2
 function deepCompare ( a, b) {
@@ -37,15 +36,15 @@ function chessBoard (h, w) {
 }
 console.log(chessBoard(8, 8));
 //Задача 4
-function makeArray(x,y) {
-    const range = (x,y) => {
-        if (x > y)
-            return range(y,x).reverse();
-        else
-            return x === y ? [y] : [x, ...range(x + 1, y)];
-    }
+function makeArray(start, end, step){
+    var steps = step === undefined || step === 0 ? 1 : step;
+    var arr = [],
+        s = Math.abs((Math.abs(start - end) + 1) / steps);
+    for (var i = 0; i < s; i++)
+        arr.push(start + i * steps);
+    return arr;
 }
-console.log(makeArray());
+console.log(makeArray(1,10));
 //Задача 5
 function reverseArray(arr) {
     let i,
@@ -67,7 +66,7 @@ function reverseArrayInPlace(arr) {
     }
     return arr;
 }
-console.log(reverseArray());
+console.log(reverseArray([1, 2, 3, 4]));
 //Задача 6
 function mergeArrays(a,b,...c){
 
@@ -79,7 +78,8 @@ function every(array, predicate) {
         if (!predicate(array[i]))
             return false;
     }
-   else return true;
+    else return true;
+
 }
 
 function some(array, predicate) {
@@ -89,4 +89,18 @@ function some(array, predicate) {
     }
     else return false;
 }
-console.log(every([1, 4, NaN, 6], Number.isNaN);
+console.log(every([1, 4, NaN, 6], Number.isNaN));
+//Задача 8
+function MultiplicatorUnitFailure() {
+    return alert('Multiplication has been failed');
+}
+function multiplyOrThrow(a, b) {
+    if (Math.random() < 0.5) {
+        return a * b;
+    } else {
+        throw MultiplicatorUnitFailure;
+    }
+}
+function keepDoing (multiplyOrThrow){
+
+}
