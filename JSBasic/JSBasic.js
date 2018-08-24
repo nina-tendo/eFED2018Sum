@@ -104,3 +104,19 @@ function multiplyOrThrow(a, b) {
 function keepDoing (multiplyOrThrow){
 
 }
+//Задача 9
+function replaceQuotes(string) {
+    var text = string;
+    var result = text.replace((/(\b'\b)|'/g), (p0, p1) => p1 ? "'" : '"');
+}
+console.log(replaceQuotes(result(“I’m the ‘hero’”)))
+//Задача 11
+function getNames (date){
+    var months = ['январь', 'февраль', 'март', 'апрель', 'май', 'июнь',
+        'июль', 'август', 'сентябрь', 'октябрь', 'ноябрь', 'декабрь'];
+    var weekDays = ['воскресенье','понедельник','вторник','среда','четверг','пятница','суббота'];
+    var day = date.getDay();
+    var month = date.getMonth();
+    alert(months[month] + ',' + weekDays[day]);
+}
+console.log(getNames(new Date()));
