@@ -68,8 +68,18 @@ function reverseArrayInPlace(arr) {
 }
 console.log(reverseArray([1, 2, 3, 4]));
 //Задача 6
-function mergeArrays(a,b,...c){
+function mergeArrays(...args){
+    var array = args.concat(...args);
+    array.forEach(fuction(...elems) {
+        var obj = {};
 
+        for (var i = 0; i < arr.length; i++) {
+            var str = args[i];
+            obj[str] = true;
+        }
+
+        return Object.keys(obj);
+    });
 }
 console.log(mergeArrays([1, 2], [3, 4], [5, 6]));
 //Звдача 7
