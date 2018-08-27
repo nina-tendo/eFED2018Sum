@@ -120,6 +120,19 @@ function replaceQuotes(string) {
     var result = text.replace((/(\b'\b)|'/g), (p0, p1) => p1 ? "'" : '"');
 }
 console.log(replaceQuotes(result(“I’m the ‘hero’”)))
+//Задача 10
+function findNumbers(array) {
+    var numbersArray = [];
+    for (var i = 0; i < array.length; i++) {
+        if (isNumber(array[i]))
+            numbersArray.push(array[i]);
+    }  return numbersArray;}
+    function isNumber(value) {
+    if (value == ".")
+        return false;
+    var regExp = /^[+-]?[0-9]*[.]?[0-9]*([eE][+-]?[0-9]*)?$/;
+    return !!regExp.exec(value);
+}
 //Задача 11
 function getNames (date){
     var months = ['январь', 'февраль', 'март', 'апрель', 'май', 'июнь',
@@ -130,3 +143,10 @@ function getNames (date){
     alert(months[month] + ',' + weekDays[day]);
 }
 console.log(getNames(new Date()));
+//Задача 12
+function getDifferenceInYears(startDate, finishDate) {
+
+    var differenceInDays = (finishDate - startDate) / (24  3600  1000);
+    var differenceInYears = Math.round((10 * differenceInDays) / 365) / 10;
+    return differenceInYears;
+}
