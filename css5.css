@@ -90,6 +90,7 @@ input {
 .weather_block {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;        
 }
 .temp {
     border: 2px solid black;
@@ -203,6 +204,12 @@ section.foo {
 .copyright {
     text-align: center;
 }
+.js_media {
+    display: none;
+}
+.active {
+    background: peachpuff;
+}
 @media screen and (max-width: 767px){
     .max_wind_speed_item {
         flex-direction: column;
@@ -221,13 +228,59 @@ section.foo {
         margin-left: 0;
         margin-top: 30px;
     }
-    .weather_block {
+    /*.weather_block {
         flex-direction: column;
     }
     .column_item_block {
         flex-direction: column;
     }
     .temp {
+        margin: 10px;
+    }*/
+    .weather_table {
+        width: 90%;
+    }
+    .column_item {
+        display: none;
+    }
+    .js_media {
+        display: flex;
+        width: 60%;
+        height: 150px;
+        border: 1px solid dodgerblue;
+        margin: 0 auto;
+    }
+    .weather_today_block {
+        display: flex;
+        flex-direction: column;
+    }
+    .today_block {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+    }
+    .js_daycall {
+        display: inline-block;
+        width: 100%;
+        border: 1px solid plum;
+        text-align: center;
+        height: 20px;
+        
+    }
+    .buttons_block {
+        display: flex;
+        margin: 10px 0 10px 0; 
+        justify-content: center;
+    }
+    .buttons {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .button {
+        padding: 10px 10px;
+        border: 1px solid lightsteelblue;
         margin: 10px;
     }
 }
