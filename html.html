@@ -47,13 +47,13 @@
            </div>
 
         <div>
-            <a href="html.html" class="temperature">Температура</a>
-            <a href="precipitation.html" class="rainfall">Вероятность осадков</a>
-            <a href="wind.html" class="wind">Ветер</a>
+            <button class="temperature">Температура</button>
+            <button class="rainfall">Вероятность осадков</button>
+            <button class="wind">Ветер</button>
         </div>
     </div>
 </div>
-        <div class="graph_container">
+        <div class="graph_container active">
             <div class="graphic">
                 <div class="graph"><span>14</span><div class="graph_block"></div></div>
                 <div class="graph"><span>14</span><div class="graph_block"></div></div>
@@ -65,6 +65,108 @@
                 <div class="graph"><span>14</span><div class="graph_block"></div></div>
             </div>
         </div>
+        <section class="rainfall-expectancy">
+            <div class="rainfall-percentage-and-time">
+              <div class="rainfall-percentage">
+                <div class="rainfall-percentage__rainfall-level">
+                  <div class="rainfall-level-44"></div>
+                </div>
+                <div class="rainfall-percentage__rainfall-level">
+                  <div class="rainfall-level-23"></div>
+                  <div>24%</div>
+                </div>
+                <div class="rainfall-percentage__rainfall-level">
+                  <div class="rainfall-level-15"></div>
+                </div>
+                <div class="rainfall-percentage__rainfall-level">
+                  <div class="rainfall-level-23"></div>
+                </div>
+                <div class="rainfall-percentage__rainfall-level">
+                  <div class="rainfall-level-30"></div>
+                  <div>30%</div>
+                </div>
+                <div class="rainfall-percentage__rainfall-level">
+                  <div class="rainfall-level-38"></div>
+                </div>
+                <div class="rainfall-percentage__rainfall-level">
+                  <div class="rainfall-level-37"></div>
+                </div>
+                <div class="rainfall-percentage__rainfall-level">
+                  <div class="rainfall-level-23"></div>
+                  <div>24%</div>
+                </div>
+                <div class="rainfall-percentage__rainfall-level">
+                  <div class="rainfall-level-15"></div>
+                </div>
+                <div class="rainfall-percentage__rainfall-level">
+                  <div class="rainfall-level-11">
+                  </div>
+                </div>
+                <div class="rainfall-percentage__rainfall-level">
+                  <div class="rainfall-level-11"></div>
+                  <div>8%</div>
+                </div>
+                <div class="rainfall-percentage__rainfall-level">
+                  <div class="rainfall-level-15"></div>
+                </div>
+              </section>
+        <section class="wind-and-time">
+                    <div class="value-and-arrows__wind-speed">
+                        <div class="wind-320-degrees">
+                            <img src="pics/Wind_arrow.png" width="40px" alt="ветер северо-восточный">
+                        </div>
+                        <div>7 м/с</div>
+                    </div>
+
+                    <div class="value-and-arrows__wind-speed">
+                        <div class="wind-320-degrees">
+                            <img src="pics/Wind_arrow.png" width="40px" alt="ветер северо-восточный">
+                        </div>
+                        <div>5 м/с</div>
+                    </div>
+
+                    <div class="value-and-arrows__wind-speed">
+                        <div class="wind-350-degrees">
+                            <img src="pics/Wind_arrow.png" width="40px" alt="ветер восточный">
+                        </div>
+                        <div>5 м/с</div>
+                    </div>
+
+                    <div class="value-and-arrows__wind-speed">
+                        <div class="wind-20-degrees">
+                            <img src="pics/Wind_arrow.png" width="40px" alt="ветер юго-восточный">
+                        </div>
+                        <div>5 м/с</div>
+                    </div>
+
+                
+            
+
+                    <div class="value-and-arrows__wind-speed">
+                        <div class="wind-20-degrees">
+                            <img src="pics/Wind_arrow.png" width="40px" alt="ветер юго-восточный">
+                        </div>
+                        <div>6 м/с</div>
+                    </div>
+                    <div class="value-and-arrows__wind-speed">
+                        <div class="wind-20-degrees">
+                            <img src="pics/Wind_arrow.png" width="40px" alt="ветер юго-восточный">
+                        </div>
+                        <div>6 м/с</div>
+                    </div>
+                    <div class="value-and-arrows__wind-speed">
+                        <div class="wind-20-degrees">
+                            <img src="pics/Wind_arrow.png" width="40px" alt="ветер юго-восточный">
+                        </div>
+                        <div>6 м/с</div>
+                    </div>
+                    <div class="value-and-arrows__wind-speed">
+                        <div class="wind-20-degrees">
+                            <img src="pics/Wind_arrow.png" width="40px" alt="ветер юго-восточный">
+                        </div>
+                        <div>5 м/с</div>
+                    </div>
+                </section>
         <div class='weather_row'>
             <div class='week_day_info'>
                 <div class='particles'>ср</div>
@@ -110,7 +212,7 @@
     <footer class="footer">
        <div class="copyright"> 2018 © Copyright</div>
     </footer>
-
+    <script src="./js/html.js"></script>
 </body>
 
 </html>

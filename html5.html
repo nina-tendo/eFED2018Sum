@@ -24,8 +24,8 @@
     </header>
 <main>
 		<div class="js_media">
-				<div class='arrow'><img src=""></div>
-				<div class='today_block'>
+				<button class='arrow' id="left_arrow"></button>
+				<div class='today_block activeDay'>
 					<div class='js_daycall'>Пт, 20 мая</div>
 					<div class="weather_today_block"><span>Ночь</span><img src="pics/Cloudy Weather.png">
 						<div class="temp">+8</div>
@@ -40,15 +40,75 @@
 						<div class="temp">+17</div>
 					</div>
 				</div>
-				<div class='arrow'><img src=""></div>
+				<div class='today_block'>
+					<div class='js_daycall'>Сб, 21 мая</div>
+					<div class="weather_today_block"><span>Ночь</span><img src="pics/Cloudy Weather.png">
+						<div class="temp">+8</div>
+					</div>
+					<div class="weather_today_block"><span>Утро</span><img src="pics/Sunny Weather.png">
+						<div class="temp">+16</div>
+					</div>
+					<div class="weather_today_block"><span>День</span><img src="pics/Weather_5.png">
+						<div class="temp">+21</div>
+					</div>
+					<div class="weather_today_block"><span>Вечер</span><img src="pics/Weather_2.png">
+						<div class="temp">+17</div>
+					</div>
+				</div>
+				<div class='today_block'>
+					<div class='js_daycall'>Вс, 22 мая</div>
+					<div class="weather_today_block"><span>Ночь</span><img src="pics/Cloudy Weather.png">
+						<div class="temp">+8</div>
+					</div>
+					<div class="weather_today_block"><span>Утро</span><img src="pics/Sunny Weather.png">
+						<div class="temp">+16</div>
+					</div>
+					<div class="weather_today_block"><span>День</span><img src="pics/Weather_5.png">
+						<div class="temp">+21</div>
+					</div>
+					<div class="weather_today_block"><span>Вечер</span><img src="pics/Weather_2.png">
+						<div class="temp">+17</div>
+					</div>
+				</div>
+				<div class='today_block'>
+					<div class='js_daycall'>Пн, 23 мая</div>
+					<div class="weather_today_block"><span>Ночь</span><img src="pics/Cloudy Weather.png">
+						<div class="temp">+8</div>
+					</div>
+					<div class="weather_today_block"><span>Утро</span><img src="pics/Sunny Weather.png">
+						<div class="temp">+16</div>
+					</div>
+					<div class="weather_today_block"><span>День</span><img src="pics/Weather_5.png">
+						<div class="temp">+21</div>
+					</div>
+					<div class="weather_today_block"><span>Вечер</span><img src="pics/Weather_2.png">
+						<div class="temp">+17</div>
+					</div>
+				</div>
+				<div class='today_block'>
+					<div class='js_daycall'>Вт, 24 мая</div>
+					<div class="weather_today_block"><span>Ночь</span><img src="pics/Cloudy Weather.png">
+						<div class="temp">+8</div>
+					</div>
+					<div class="weather_today_block"><span>Утро</span><img src="pics/Sunny Weather.png">
+						<div class="temp">+16</div>
+					</div>
+					<div class="weather_today_block"><span>День</span><img src="pics/Weather_5.png">
+						<div class="temp">+21</div>
+					</div>
+					<div class="weather_today_block"><span>Вечер</span><img src="pics/Weather_2.png">
+						<div class="temp">+17</div>
+					</div>
+				</div>
+				<button class='arrow' id="right_arrow"></button>
 			</div>
 		<div class='buttons_block'>
-			<div class='buttons'>
-				<div class='button'>пт</div>
-				<div class='button'>сб</div>
-				<div class='button'>вс</div>
-				<div class='button'>пн</div>
-				<div class='button'>вт</div>
+			<div class='buttons' id="buttons">
+				<div class='button' id="button">пт</div>
+				<div class='button' id="button">сб</div>
+				<div class='button' id="button">вс</div>
+				<div class='button' id="button">пн</div>
+				<div class='button' id="button">вт</div>
 			</div>
 		</div>	
 	<div class='weather_table_container'>
@@ -213,5 +273,6 @@
 <footer class="footer">
 	<div class="copyright"> 2018 © Copyright</div>
 </footer>
+<script src="./js/html5.js"></script>
 </body>
-<script src='/html5.js'></script>
+</html>
