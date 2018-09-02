@@ -1,11 +1,11 @@
-var bkg = document.getElementsByClassName('buttons');
-bkg[0].addEventListener('click', function setBackground(event){ 
-	if (event.target.id === 'button'){
-	for (var i = 0; i < bkg.length; i++){
-		bkg[i].childNodes.classList.add('active');
-		break;
-		}
-	}
+var buttons = document.getElementsByClassName('buttons');
+buttons[0].addEventListener('click', function (event){ 
+		buttons[0].classList.add('active');
+			var oldActiveElement = document.querySelector('.active');
+			oldActiveElement.classList.remove('active');
+			
+			var newActiveElement = event.target;
+			newActiveElement.classList.add('active');		
 });
 var leftArrow = document.getElementById('left_arrow');
 var rightArrow = document.getElementById('right_arrow');
