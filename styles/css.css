@@ -49,7 +49,7 @@ input {
     background-color: lightgray;
 	position: absolute;
     right: 0;
-    background-image: url("pics/magnifier.png");
+    background-image: url("magnifier.png");
     background-repeat:no-repeat;
     background-size:15px;
     background-position:10px;
@@ -140,52 +140,6 @@ img {
 }
 .copyright {
     text-align: center;
-}
-@media screen and (max-width:767px){
-    .weather_row {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-    }
-    .week_day_info {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-    }
-    .particles {
-        display: flex;
-        flex-direction: column;
-        flex-grow: 1;
-    }
-}
-
-@media screen and (max-width:767px){
-    .particles:hover {
-        color: dodgerblue;
-    }
-    footer {
-        position: relative;
-    }
-    .footer {
-        margin-top: 0;
-    }
-    .pollution {
-    	width: auto;
-    	display: flex;
-    }
-    .input {
-    	width: 100%;
-    }
-} 
-@media screen and (max-width: 558px){
-	input {
-		position: static;
-		width: 100%;
-	}
-	.input {
-		position: static;
-		
-	}
 }
 .rainfall-expectancy {
     display: none;
@@ -327,4 +281,50 @@ img {
 }
 .active {
     display: flex;
+}
+@media screen and (max-width:767px){
+    .weather_row {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .week_day_info {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .particles {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+    }
+}
+
+@media screen and (max-width:767px){
+    .particles:hover {
+        color: dodgerblue;
+    }
+    footer {
+        position: relative;
+    }
+    .footer {
+        margin-top: 0;
+    }
+    .pollution {
+    	width: auto;
+    	display: flex;
+    }
+    .input {
+    	width: 100%;
+    }
+} 
+@media screen and (max-width: 558px){
+	input {
+		position: static;
+		width: 100%;
+	}
+	.input {
+		position: static;
+		
+	}
 }

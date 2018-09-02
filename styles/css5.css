@@ -50,7 +50,7 @@ input {
     background-color: lightgray;
     position: absolute;
     right: 0;
-    background-image: url("pics/magnifier.png");
+    background-image: url("magnifier.png");
     background-repeat:no-repeat;
     background-size:15px;
     background-position:10px;
@@ -210,6 +210,21 @@ section.foo {
 .active {
     background: peachpuff;
 }
+#left_arrow {
+    width: 30px;
+    height: 30px;
+    margin-top: 55px;
+    background: url(left_arrow.png);
+}
+#right_arrow {
+    width: 30px;
+    height: 30px;
+    margin-top: 55px;
+    background: url(right_arrow.png);
+}
+.buttons_block {
+    display: none;
+}
 @media screen and (max-width: 767px){
     .max_wind_speed_item {
         flex-direction: column;
@@ -228,15 +243,6 @@ section.foo {
         margin-left: 0;
         margin-top: 30px;
     }
-    /*.weather_block {
-        flex-direction: column;
-    }
-    .column_item_block {
-        flex-direction: column;
-    }
-    .temp {
-        margin: 10px;
-    }*/
     .weather_table {
         width: 90%;
     }
@@ -255,7 +261,7 @@ section.foo {
         flex-direction: column;
     }
     .today_block {
-        display: flex;
+        display: none;
         flex-direction: row;
         justify-content: space-around;
         width: 100%;
@@ -282,5 +288,8 @@ section.foo {
         padding: 10px 10px;
         border: 1px solid lightsteelblue;
         margin: 10px;
+    }
+    .activeDay {
+        display: flex;
     }
 }
